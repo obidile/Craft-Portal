@@ -1,0 +1,70 @@
+.toolbar-item-spacer {
+  flex: 1 1 auto;
+}
+
+.app-container {
+  height: 90%;
+  margin: 0;
+}
+
+.app-sidenav {
+  width: 230px;
+}
+.spacer {
+  margin-bottom: 30px;
+  border-radius: 80px;
+  background-color: #fff;
+  color: #3f51b5;
+}
+.btn-color {
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.contentcon {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0062cc;
+}

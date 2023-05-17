@@ -1,0 +1,86 @@
+<div class="container">
+  <nav class="bg-light rounded-3 p-3 mb-4">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a>Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Schools Management</li>
+    </ol>
+  </nav>
+  <div class="table-title">
+    <div class="row p-4">
+      <div class="col-sm-8">
+        <h2>Schools <b>Details</b></h2>
+      </div>
+      <div class="col-sm-4">
+        <button mat-raised-button color="primary" (click)="open(content)">Add School</button>
+      </div>
+    </div>
+  </div>
+  <table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>S/N</th>
+        <th>School</th>
+        <th>Status</th>
+        <th>State</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>uUniversity of Lagos</td>
+        <td>Active</td>
+        <td>Lagos</td>
+        <td>
+          <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+          <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h1 class="modal-title" id="modal-basic-title">Add New School</h1>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="first">Name</label>
+            <input type="text" class="form-control" placeholder="" id="first">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="company">Active</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="true"> True
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="false"> False
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="last">State</label>
+            <input type="text" class="form-control" placeholder="" id="last">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>

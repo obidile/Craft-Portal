@@ -1,0 +1,91 @@
+<div class="container">
+    <nav class="bg-light rounded-3 p-3 mb-4">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a>Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
+    <mat-toolbar>
+        <button mat-button [matMenuTriggerFor]="menu">All Category
+            <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Computers</button>
+            <button mat-menu-item>Food</button>
+            <button mat-menu-item>Cloths</button>
+            <button mat-menu-item>Service</button>
+        </mat-menu>
+        <span class="product_bar"></span>
+        <!-- <form class="">
+            <input class="mr-sm-2" placeholder="Search">
+          </form> -->
+    </mat-toolbar>
+
+
+    <br> <br>
+    <!-- <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <img [src]="images[0].src" alt="First slide">
+            <div class="carousel-caption">
+                <h3>{{images[0].title}}</h3>
+                <p>{{images[0].description}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <img [src]="images[1].src" alt="Second slide">
+            <div class="carousel-caption">
+                <h3>{{images[1].title}}</h3>
+                <p>{{images[1].description}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <img [src]="images[2].src" alt="Third slide">
+            <div class="carousel-caption">
+                <h3>{{images[2].title}}</h3>
+                <p>{{images[2].description}}</p>
+            </div>
+        </ng-template>
+    </ngb-carousel> -->
+
+    <div class="row">
+        <div class="col-md-4">
+            <mat-card class="card">
+                <img mat-card-image src="../assets/img/chair.jpg" alt="Photo of a Shiba Inu">
+                <h4 class="product-title">Cruved Chair</h4>
+                <h4 class="product-price">$29.99</h4>
+                <mat-card-actions>
+                    <button class="btn_radious btn btn-success">Buy</button>
+                    <button class="btn_radious btn btn-secondary ">View</button>
+                    <button class="btn_radious btn btn-warning">SHARE</button>
+                    <button class="btn_radious btn btn-danger">Rate</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="col-md-4">
+            <mat-card class="card">
+                <img mat-card-image src="../assets/img/chair.jpg" alt="Photo of a Shiba Inu">
+                <h4 class="product-title">Cruved Chair</h4>
+                <h4 class="product-price">$29.99</h4>
+                <mat-card-actions>
+                    <button class="btn_radious btn btn-success">Buy</button>
+                    <button class="btn_radious btn btn-secondary ">View</button>
+                    <button class="btn_radious btn btn-warning">SHARE</button>
+                    <button class="btn_radious btn btn-danger">Rate</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="col-md-4">
+            <mat-card class="card">
+                <img mat-card-image src="../assets/img/chair.jpg" alt="Photo of a Shiba Inu">
+                <h4 class="product-title">Cruved Chair</h4>
+                <h4 class="product-price">$29.99</h4>
+                <mat-card-actions>
+                    <button class="btn_radious btn btn-success">Buy</button>
+                    <button class="btn_radious btn btn-secondary ">View</button>
+                    <button class="btn_radious btn btn-warning">SHARE</button>
+                    <button class="btn_radious btn btn-danger">Rate</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

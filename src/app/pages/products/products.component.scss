@@ -1,0 +1,60 @@
+.product_bar {
+    flex: 1 1 auto;
+}
+
+.card {
+    max-width: 400px;
+}
+
+.header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.btn_radious {
+    border-radius: 65px;
+    margin-right: 10px
+}
+
+.rader{
+    border-radius: 50px;
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-title {
+    margin: 1em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn_radious {
+    border-radius: 25px;
+    margin: 0 0.5em;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.mat-card-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
