@@ -2,35 +2,35 @@ import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-	selector: 'app-countries',
-	templateUrl: './countries.component.html',
-	styleUrls: ['./countries.component.scss']
+  selector: 'app-countries',
+  templateUrl: './countries.component.html',
+  styleUrls: ['./countries.component.scss']
 })
 export class CountriesComponent implements OnInit {
-	closeResult = '';
-	constructor(private modelService: NgbModal) { }
+  closeResult = '';
+  constructor(private modelService: NgbModal) { }
 
-	ngOnInit(): void {
-	}
+  ngOnInit(): void {
+  }
 
-	open(content) {
-		this.modelService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
-			(result) => {
-				this.closeResult = `Closed with: ${result}`;
-			},
-			(reason) => {
-				this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-			},
-		);
-	}
+  open(content) {
+    this.modelService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+      (result) => {
+        this.closeResult = `Closed with: ${result}`;
+      },
+      (reason) => {
+        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+      },
+    );
+  }
 
-	private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-			return 'by pressing ESC';
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return 'by clicking on a backdrop';
-		} else {
-			return `with: ${reason}`;
-		}
-	}
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
 }

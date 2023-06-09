@@ -11,6 +11,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   images = [
     {
       src: '../assets/img/chair.jpg',

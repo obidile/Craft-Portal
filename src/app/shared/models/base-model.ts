@@ -1,7 +1,7 @@
 export class BaseModel {
-    public id: number;
-    public CreatedDate: Date;
-    public CreatedBy: string;
-    public UpdateDate: Date;
-    public UpdatedBy: string;
+    public Id: number;
+    public createdBy: string;
+    public createdDate: Date;
+    public updatedBy: string;
+    public updatedDate: Date;
 }
